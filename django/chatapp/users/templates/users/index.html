@@ -1,0 +1,15 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+<div class="container border border-dark w-50 h-30">
+    {% for chat in chats  %}
+    
+    {{chat.message}}
+    <hr>
+    
+    
+    {% endfor %}
+</div>
+
+{% endblock content %}
